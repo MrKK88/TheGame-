@@ -8,9 +8,13 @@ cards = [...cards];
 const init = () => {
 
 cards.forEach ( card => {
-
+const position = Math.floor(Math.random()*cardsColor.length);
+card.classList.add(cardsColor[position]);
+cardsColor.splice(position, position+1);
 
 })
 
 }
+
+
 
